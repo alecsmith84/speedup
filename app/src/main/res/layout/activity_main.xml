@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@android:color/black"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="gone"/>
+
+<!--    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/distancetxt"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="-200dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Total Distance:"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"/>-->
+
+   <!-- <ImageView
+        android:id="@+id/meter"
+        android:layout_width="700dp"
+        android:layout_height="461dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-155dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/meter" />
+
+    <ImageView
+        android:id="@+id/needle"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_alignBottom="@+id/meter"
+        android:layout_marginLeft="45dp"
+        android:rotation="-130"
+        android:src="@drawable/needle"/>-->
+
+    <TextView
+        android:id="@+id/speedtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="0"
+        android:textColor="@color/speedcolor"
+        android:textSize="96sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timetxt"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Total Time:"
+        android:textColor="@color/speedcolor"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/start"
+            android:layout_gravity="bottom"
+            android:background="@color/start"
+            android:paddingBottom="0dp"
+            android:text="Start"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pause"
+            android:layout_gravity="left"
+            android:background="@android:color/white"
+            android:text="Pause"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/stop"
+            android:layout_gravity="right"
+            android:background="@color/stop"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:text="Stop"
+            android:visibility="gone"/>
+    </LinearLayout>
+</FrameLayout>
